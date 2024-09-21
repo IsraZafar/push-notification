@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yourappname">
+
+    <application
+        android:label="yourappname"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|direction|textSize|screenConfiguration|orientation|uiMode|colorMode|fontScale|hardwareAccelerated|navigation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Required permission -->
+        <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    </application>
+</manifest>
